@@ -5,7 +5,7 @@ import time
 
 browser = webdriver.Firefox()
 
-url = "https://eksisozluk.com/turkiye--43722?p="
+url = "https://eksisozluk.com/turkiye--43522?p="
 
 pageCount = 1
 entries = []
@@ -25,7 +25,7 @@ while pageCount <= 2:
 with open("entries.txt", "w", encoding="UTF-8") as file:
     for entry in entries:
         file.write(str(entryCount) + ".\n" + entry + "\n")
-        file.write("*********************************\n")
+        file.write("*******************\n")
         entryCount += 1
 
 browser.close()
